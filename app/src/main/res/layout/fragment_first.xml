@@ -9,10 +9,12 @@
     <TextView
         android:id="@+id/textview_first"
         android:layout_width="wrap_content"
-        android:layout_height="158dp"
+        android:layout_height="wrap_content"
         android:text="@string/hello_first_fragment"
+        android:textSize="34sp"
         app:layout_constraintBottom_toTopOf="@id/button_first"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -35,17 +37,22 @@
         android:src="@android:drawable/btn_star_big_on"
         app:layout_constraintBottom_toTopOf="@+id/textview_first"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:src="@tools:sample/backgrounds/scenic" />
+        app:layout_constraintVertical_bias="0.188"
+        tools:ignore="ImageContrastCheck"
+        tools:src="@android:drawable/ic_menu_help" />
 
     <EditText
         android:id="@+id/userInputTextNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="input from user"
         android:inputType="number"
         android:minHeight="48dp"
+        android:textColorHint="#757575"
         app:layout_constraintBottom_toTopOf="@+id/button_first"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

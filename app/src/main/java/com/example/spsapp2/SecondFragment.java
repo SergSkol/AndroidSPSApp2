@@ -34,7 +34,10 @@ public class SecondFragment extends Fragment {
 
         Integer value = 0;
         if(strValue != "" && strValue != null){
-            value = Integer.parseInt(strValue);
+            try {
+                value = Integer.parseInt(strValue);
+            }
+            catch(Exception e) {value = 0;}
         } else value = 0;
 
         //binding.textviewSecond.setText(value);
@@ -46,7 +49,7 @@ public class SecondFragment extends Fragment {
         if(value==ownValue){
             isWin="You are WINNER! ";
         } else isWin="Try again... ";
-        binding.textviewSecond.setText(isWin+"Your number is "+strValue+", my number is "+ownValue);
+        binding.textviewSecond.setText(isWin+"Your number is "+value+", my number is "+ownValue);
 
 
         //spscode end
