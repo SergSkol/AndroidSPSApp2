@@ -32,10 +32,10 @@ public class FirstFragment extends Fragment {
         binding.buttonFirst.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //sps
+                //@SergSkol {
                 String userInput = binding.userInputTextNumber.getText().toString();
                 ((MainActivity) getActivity()).setEditText(userInput);
-                //sps
+                //@SergSkol }
                 NavHostFragment.findNavController(FirstFragment.this)
                         .navigate(R.id.action_FirstFragment_to_SecondFragment);
             }

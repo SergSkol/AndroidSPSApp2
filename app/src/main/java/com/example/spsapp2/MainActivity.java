@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
                 || super.onSupportNavigateUp();
     }
 
-    //sps
+    //@SergSkol
     private String userInput;
 
     public String getEditText(){
@@ -83,5 +83,5 @@ public class MainActivity extends AppCompatActivity {
     public void setEditText(String et){
         this.userInput = et;
     }
-    //sps
+    //@SergSkol
 }

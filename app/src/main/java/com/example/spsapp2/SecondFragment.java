@@ -27,9 +27,7 @@ public class SecondFragment extends Fragment {
     ) {
         binding = FragmentSecondBinding.inflate(inflater, container, false);
 
-        //spscode begin
-//        binding1 = FragmentFirstBinding.inflate(inflater, container, false);
-//        String strValue = binding1.userInputTextNumber.getText().toString();
+        //@SergSkol {
         String  strValue = ((MainActivity) getActivity()).getEditText();
 
         Integer value = 0;
@@ -40,9 +38,6 @@ public class SecondFragment extends Fragment {
             catch(Exception e) {value = 0;}
         } else value = 0;
 
-        //binding.textviewSecond.setText(value);
-
-
         Integer ownValue = (int)(Math.random() * 9);
 
         String isWin = "";
@@ -51,8 +46,7 @@ public class SecondFragment extends Fragment {
         } else isWin="Try again... ";
         binding.textviewSecond.setText(isWin+"Your number is "+value+", my number is "+ownValue);
 
-
-        //spscode end
+        //@SergSkol }
 
         return binding.getRoot();
 
